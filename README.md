@@ -1,6 +1,6 @@
 # ζ₃(5) is irrational: Lean 4 formalization
 
-Lean 4 proof of the main theorem of *On the irrationality of ζ₃(5)* by Ijtihed Kilani (Aalto University).
+Lean 4 proof of the main theorem of *On the irrationality of ζ₃(5)* by Ijtihed Kilani.
 
 ```lean
 -- lean/RequestProject/Zeta35/MainFinal.lean
