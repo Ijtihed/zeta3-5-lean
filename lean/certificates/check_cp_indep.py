@@ -197,5 +197,7 @@ if __name__ == '__main__':
         i = args.index('--tamper'); tamper = args[i + 1]; del args[i:i + 2]
     if '--eps' in args:
         i = args.index('--eps'); eps = F(args[i + 1]); del args[i:i + 2]
+    bad = 0
     for fn in [a for a in args if a != '--fastest']:
-        main(fn, eps, tamper)
+        bad += main(fn, eps, tamper)[0]
+    sys.exit(1 if bad else 0)

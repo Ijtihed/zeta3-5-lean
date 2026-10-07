@@ -59,3 +59,4 @@ print(f'n={n} l={l} K={K} pairs={pairs}  v_l([X^0])={v[0]}  expected {-28 * pair
 print('  v_l of X^i coefficients:', v)
 ok = v[0] == -28 * pairs and all(x is None or x > v[0] for x in v[1:])
 print('  VERDICT:', 'PASS' if ok else 'FAIL')
+sys.exit(0 if ok else 1)
